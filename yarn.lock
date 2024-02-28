@@ -525,6 +525,11 @@
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.2.tgz#6f26dbc8fbc7205873ce3cee2f690eba0d421b39"
   integrity sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==
 
+"@openzeppelin/contracts@4.9.2":
+  version "4.9.2"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.9.2.tgz#1cb2d5e4d3360141a17dbc45094a8cad6aac16c1"
+  integrity sha512-mO+y6JaqXjWeMh9glYVzVu8HYPGknAAnWyxTRhGeckOruyXQMNnlcW6w/Dx9ftLeIQk6N+ZJFuVmTwF7lEIFrg==
+
 "@parcel/watcher-android-arm64@2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@parcel/watcher-android-arm64/-/watcher-android-arm64-2.3.0.tgz#d82e74bb564ebd4d8a88791d273a3d2bd61e27ab"
@@ -1425,6 +1430,69 @@
     "@walletconnect/window-getters" "^1.0.1"
     tslib "1.14.1"
 
+"@zoralabs/1155-deployments@*":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@zoralabs/1155-deployments/-/1155-deployments-0.0.13.tgz#db98cc26e6781d07b55cbe2a443f0edfc5875fb4"
+  integrity sha512-jC8nx3qQGbCGuE4ynBlYYV/VfyhrIAG+k3x0l2yCtEXIiW6oAECM6iZzzPLRcmIiIO3xoC4y70iwVddqzLR3QQ==
+  dependencies:
+    "@zoralabs/zora-1155-contracts" "*"
+    ds-test "https://github.com/dapphub/ds-test#cd98eff28324bfac652e63a239a60632a761790b"
+    forge-std "https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80"
+    solmate "6.1.0"
+
+"@zoralabs/openzeppelin-contracts-upgradeable@4.8.4":
+  version "4.8.4"
+  resolved "https://registry.yarnpkg.com/@zoralabs/openzeppelin-contracts-upgradeable/-/openzeppelin-contracts-upgradeable-4.8.4.tgz#130b69cd5ff70b1f67da11fe53fe8b2323464b84"
+  integrity sha512-5vhL88tz00Gv2+NUhLdYBRqb9RRekfyQAodXTQxJU2LYxxy6jr1mPycTZempQ1kmw5wIwFbSIoYzpaxOx6UK6Q==
+
+"@zoralabs/protocol-deployments@*":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@zoralabs/protocol-deployments/-/protocol-deployments-0.1.0.tgz#e3ca29c783d0b16774ac707b68ae6bc5a4b8371f"
+  integrity sha512-BlTAxPvY3hXPtJW7+DVDyjjs0S1q4XFftDky0AZVp+q9wdJ6+ffradQ7E/UChsABNeFVjjArCqOUENdl0u+N6w==
+  dependencies:
+    "@zoralabs/1155-deployments" "*"
+    "@zoralabs/zora-1155-contracts" "*"
+
+"@zoralabs/protocol-deployments@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@zoralabs/protocol-deployments/-/protocol-deployments-0.0.7.tgz#e3f9e7aa468c44f019000175a0770a135108f438"
+  integrity sha512-9Wt6RJ/tabhK5VdkcRst7LeJMPygqTRfBc4t5eTt3kiNdYPezNObA5T3J47ZUGe1+iZe8oDUp2cuhavBwGZ8Fg==
+  dependencies:
+    "@zoralabs/zora-1155-contracts" "*"
+    ds-test "https://github.com/dapphub/ds-test#cd98eff28324bfac652e63a239a60632a761790b"
+    forge-std "https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80"
+    solmate "^6.1.0"
+
+"@zoralabs/protocol-rewards@*":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@zoralabs/protocol-rewards/-/protocol-rewards-1.3.0.tgz#8499dc97208d6669b481756eb4282429d6553d71"
+  integrity sha512-X6BSYpLDnKx0hauiIYt6BBndy1s2eavpfSXURzs8QUo4VIwjk+UeyOE0a1jlbkZxDfHjUHUW53rEumEC/72YmQ==
+  dependencies:
+    ds-test "https://github.com/dapphub/ds-test#cd98eff28324bfac652e63a239a60632a761790b"
+    forge-std "https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80"
+
+"@zoralabs/protocol-sdk@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@zoralabs/protocol-sdk/-/protocol-sdk-0.5.3.tgz#2a247272613976d4aae14644142d639c3f443085"
+  integrity sha512-0qNTtggsXjRd7eaPhdDb4Yixl7jikmqeH8Ws1Q2XMVQewo7aQALe0wOvOoLT3aNJtxKxmOpQGSlQaWBP3WmjZQ==
+  dependencies:
+    "@zoralabs/protocol-deployments" "*"
+    abitype "^0.10.3"
+    vite "4.5.0"
+
+"@zoralabs/zora-1155-contracts@*":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@zoralabs/zora-1155-contracts/-/zora-1155-contracts-2.5.3.tgz#d0b1d6322424a245a31555ec4a136049a1d51815"
+  integrity sha512-dMlUq2yWwUbv31X8Tu4KQjhwvVghyS8GH6Ir/upFdqW8/B1UGCWdkMiBxOQVj6giWKvfug+9ICs+S2HuWzNQzw==
+  dependencies:
+    "@openzeppelin/contracts" "4.9.2"
+    "@zoralabs/openzeppelin-contracts-upgradeable" "4.8.4"
+    "@zoralabs/protocol-rewards" "*"
+    ds-test "https://github.com/dapphub/ds-test#cd98eff28324bfac652e63a239a60632a761790b"
+    forge-std "https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80"
+    solady "^0.0.123"
+    solmate "^6.1.0"
+
 JSONStream@^1.3.5:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.5.tgz#3208c1f08d3a4d99261ab64f92302bc15e111ca0"
@@ -1442,6 +1510,11 @@ abitype@0.9.8:
   version "0.9.8"
   resolved "https://registry.yarnpkg.com/abitype/-/abitype-0.9.8.tgz#1f120b6b717459deafd213dfbf3a3dd1bf10ae8c"
   integrity sha512-puLifILdm+8sjyss4S+fsUN09obiT1g2YW6CtcQF+QDzxR0euzgEB29MZujC6zMk2a6SVmtttq1fc6+YFA7WYQ==
+
+abitype@^0.10.3:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/abitype/-/abitype-0.10.3.tgz#27ce7a7cdb9a80ccd732a3f3cf1ce6ff05266fce"
+  integrity sha512-tRN+7XIa7J9xugdbRzFv/95ka5ivR/sRe01eiWvM0HWWjHuigSZEACgKa0sj4wGuekTDtghCx+5Izk/cOi78pQ==
 
 acorn@^8.10.0:
   version "8.11.2"
@@ -1857,6 +1930,15 @@ dijkstrajs@^1.0.1:
   resolved "https://registry.yarnpkg.com/dijkstrajs/-/dijkstrajs-1.0.3.tgz#4c8dbdea1f0f6478bff94d9c49c784d623e4fc23"
   integrity sha512-qiSlmBq9+BCdCA/L46dw8Uy93mloxsPSbwnm5yrKn2vMPiy8KyAskTF6zuV/j5BMsmOGZDPs7KjU+mjb670kfA==
 
+"ds-test@git+https://github.com/dapphub/ds-test.git#cd98eff28324bfac652e63a239a60632a761790b":
+  version "1.0.0"
+  uid cd98eff28324bfac652e63a239a60632a761790b
+  resolved "git+https://github.com/dapphub/ds-test.git#cd98eff28324bfac652e63a239a60632a761790b"
+
+"ds-test@https://github.com/dapphub/ds-test#cd98eff28324bfac652e63a239a60632a761790b":
+  version "1.0.0"
+  resolved "https://github.com/dapphub/ds-test#cd98eff28324bfac652e63a239a60632a761790b"
+
 duplexify@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/duplexify/-/duplexify-4.1.2.tgz#18b4f8d28289132fa0b9573c898d9f903f81c7b0"
@@ -2058,6 +2140,15 @@ for-each@^0.3.3:
   integrity sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==
   dependencies:
     is-callable "^1.1.3"
+
+"forge-std@git+https://github.com/foundry-rs/forge-std.git#705263c95892a906d7af65f0f73ce8a4a0c80b80":
+  version "1.6.0"
+  uid "705263c95892a906d7af65f0f73ce8a4a0c80b80"
+  resolved "git+https://github.com/foundry-rs/forge-std.git#705263c95892a906d7af65f0f73ce8a4a0c80b80"
+
+"forge-std@https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80":
+  version "1.6.0"
+  resolved "https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80"
 
 fsevents@~2.3.2:
   version "2.3.3"
@@ -2829,6 +2920,11 @@ preact@^10.12.0, preact@^10.5.9:
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.19.2.tgz#841797620dba649aaac1f8be42d37c3202dcea8b"
   integrity sha512-UA9DX/OJwv6YwP9Vn7Ti/vF80XL+YA5H2l7BpCtUr3ya8LWHFzpiO5R+N7dN16ujpIxhekRFuOOF82bXX7K/lg==
 
+prettier@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
+  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
+
 process-warning@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/process-warning/-/process-warning-1.0.0.tgz#980a0b25dc38cd6034181be4b7726d89066b4616"
@@ -3108,6 +3204,21 @@ signal-exit@^3.0.3:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
+
+solady@^0.0.123:
+  version "0.0.123"
+  resolved "https://registry.yarnpkg.com/solady/-/solady-0.0.123.tgz#7ef95767c1570e3efde7550da2a8b439b2f413d2"
+  integrity sha512-F/B8OMCplGsS4FrdPrnEG0xdg8HKede5PwC+Rum8soj/LWxfKckA0p+Uwnlbgey2iI82IHvmSOCNhsdbA+lUrw==
+
+solmate@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/solmate/-/solmate-6.1.0.tgz#b85aaa8c2b34afe9c6d6d5a015c369267c576313"
+  integrity sha512-gxG4YU5nnAQ+Ac23R44GS3Xo3+X0+8XCe4/P1KvVobL5ERBzQBG/xMv7NSvVo/pkHSYGufgUAPjiueYxujKJAA==
+
+solmate@^6.1.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/solmate/-/solmate-6.2.0.tgz#edd29b5f3d6faafafdcf65fe4d1d959b4841cfa8"
+  integrity sha512-AM38ioQ2P8zRsA42zenb9or6OybRjOLXIu3lhIT8rhddUuduCt76pUEuLxOIg9GByGojGz+EbpFdCB6B+QZVVA==
 
 sonic-boom@^2.2.1:
   version "2.8.0"
@@ -3434,7 +3545,7 @@ viem@~0.3.36:
     isomorphic-ws "5.0.0"
     ws "8.12.0"
 
-vite@^4.3.5:
+vite@4.5.0, vite@^4.3.5:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.5.0.tgz#ec406295b4167ac3bc23e26f9c8ff559287cff26"
   integrity sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==
